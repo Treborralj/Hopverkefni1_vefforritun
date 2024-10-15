@@ -1,0 +1,20 @@
+
+
+
+
+
+
+/* Stillingar */
+
+:root{
+
+    /*litir*/
+    --color-white: #fafafa;
+
+    /*litir breytur*/
+    --color-background-primary: var(--color-white);
+}
+
+html {
+    background-color: #fafafa
+  }
