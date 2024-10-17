@@ -1,29 +1,54 @@
 /* Stillingar */
 
-:root{
+:root {
+  /*litir*/
+  --color-white: #fafafa;
 
-    /*litir*/
-    --color-white: #fafafa;
-
-    /*litir breytur*/
-    --color-background-primary: var(--color-white);
+  /*litir breytur*/
+  --color-background-primary: var(--color-white);
+  --font-family-base: 'Poppins-regular', Arial, Helvetica, sans-serif;
+  --font-family-heading: 'PlayfairDisplay-bold', 'Comic Sans MS', cursive;
+  --font-family-heading-normal: 'PlayfairDisplay-regular', 'Comic Sans MS', cursive;
 }
 
 html {
-    background-color: var(--color-background-primary)
-  }
-  @font-face {
-    font-family: 'PlayfairDisplay-regular';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url('./fonts/PlayfairDisplay-regular.ttf') format('woff2');
-  }
-  
-  @font-face {
-    font-family: 'Poppins-regular';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url('./fonts/Poppins-Regular.ttf') format('woff2');
-  }
+  background-color: var(--color-background-primary);
+}
+@font-face {
+  font-family: 'PlayfairDisplay-regular';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/PlayfairDisplay-regular.ttf") format("woff2");
+}
+@font-face {
+  font-family: 'PlayfairDisplay-bold';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/PlayfairDisplay-Bold.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: 'Poppins-regular';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./fonts/Poppins-Regular.ttf") format("woff2");
+}
+
+/*** Allt meginmál notar Poppins-regular ***/
+html,
+input,
+select,
+button {
+  font-family: var(--font-family-base);
+}
+
+/*** Allar fyrirsagnir nota PlayfairDisplay-Bold ***/
+h1,
+h2,
+h3,
+legend {
+  font-family: var(--font-family-heading);
+}
