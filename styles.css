@@ -1,11 +1,41 @@
 /* Stillingar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
 
 :root {
-  /*litir*/
+
+  /* letur stærðir*/ 
+  --font-size-base: 18px;
+  --font-size-headings: 60px;
+
+  /* Grunn bilið okkar er 1rem == 16px */
+  --spacing: 1rem;
+
+  /* Border breiddir */
+  --border-width: 1px;
+  --border-radius-regular: 5px;
+  --border-radius-image: 10px;
+  --border-regular: 1px solid #000; 
+
+  /*litir-bakgrunnur*/
   --color-white: #fafafa;
+  --color-cream: #F7F1EB;
+  --color-black: #000000;
+
+  /*litir-texti*/
+  --color-main: #000000;
+  --color-second: #9B9B9B;
+  --color-third: #E3CDB1;
+  --color-forth: #5E5B69; 
+
 
   /*litir breytur*/
   --color-background-primary: var(--color-white);
+  --color-background-secondary: var(--color-cream);
+  --color-background-third: var(--color-black);
   --font-family-base: 'Poppins-regular', Arial, Helvetica, sans-serif;
   --font-family-heading: 'PlayfairDisplay-bold', 'Comic Sans MS', cursive;
   --font-family-heading-normal: 'PlayfairDisplay-regular', 'Comic Sans MS', cursive;
@@ -51,4 +81,465 @@ h2,
 h3,
 legend {
   font-family: var(--font-family-heading);
+}
+
+
+/*Almennt*/
+
+/*Takka útlit*/ 
+.button {
+  display: inline-block;
+  min-width: 250px;
+  padding: 0.75rem;
+  text-align: center;
+  border: var(--border-width) solid #E3CDB1; 
+  background-color: transparent; 
+  color: #E3CDB1; 
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.button:hover {
+  color: var(--color-background-secondary); 
+  background-color: #E3CDB1; 
+  border-color: var(--color-background-secondary); 
+}
+
+/** Valmynd **/
+.wrapper-nav {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 2rem; 
+}
+
+.wrapper-nav p {
+  margin: 0; 
+  font-size: 20px; 
+  font-weight: bold; 
+}
+
+.wrapper-nav ul {
+  list-style: none; 
+  padding: 0;
+  display: flex;
+  gap: 20px; 
+}
+
+.wrapper-nav ul li {
+  margin: 0;
+}
+
+.wrapper-nav ul li a {
+  text-decoration: none; 
+  color: #000000; 
+}
+
+.wrapper-nav ul li a:hover {
+  color: #E3CDB1; 
+}
+
+/*footer*/ 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  flex-direction: column;
+  margin-top: var(--spacing);
+  margin-bottom: var(--spacing);
+}
+
+footer .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer section h3 {
+  margin-bottom: 20px;
+  font-family: var(--font-family-base);
+}
+
+footer .image {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+}
+
+footer .image img {
+  width: 50px;
+  height: auto;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #D0D0D0;
+}
+
+/*Index.html*/
+
+/*Pumpkin-pie-byrjun á Index*/
+.wrapper-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.wrapper-main .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+}
+
+.wrapper-main .intro {
+  max-width: 600px;
+}
+
+.wrapper-main .intro p {
+  font-size: 18px;
+  color: #5E5B69;
+}
+
+.wrapper-main .intro h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.wrapper-main .intro h4 {
+  color: #E3CDB1;
+  font-family: var(--font-family-base);
+  font-weight: normal;
+}
+
+.wrapper-main .intro a.button {
+  display: inline-block;
+  padding: 15px 30px;
+  border: 1px solid #E3CDB1;
+  background-color: transparent;
+  color: #E3CDB1;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.wrapper-main .intro a.button:hover {
+  background-color: #E3CDB1;
+  color: #ffffff;
+}
+
+/*Þarf að laga myndina somehow fyrir pumpkin pie hér*/ 
+
+
+
+/*Index - newsletter*/
+.newsletter {
+  background-color: #000; 
+  margin-top: var(--spacing);
+  padding: 40px;
+}
+
+.newsletter .content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 1200px;
+  margin-top: 2rem;
+  margin: 0 auto;
+}
+
+.newsletter .text-section {
+  flex: 1;
+}
+
+.newsletter .text-section p {
+  font-size: 16px;
+  margin: 0;
+  color: #E3CDB1;
+}
+
+.newsletter .text-section h3 {
+  font-size: 40px;
+  margin-top: 10px;
+  color: #FFFFFF;
+}
+
+.newsletter .form-section input {
+  border: none;
+  border-bottom: 1px solid #E3CDB1; 
+  padding: 5px 0; 
+  background-color: transparent; 
+  width: 250px; 
+  font-size: 24px; 
+  color: #FFFFFF; 
+  margin-right: 2rem;
+}
+
+.newsletter .form-section input::placeholder {
+  color: #FFFFFF; 
+  font-size: 18px; 
+}
+
+.newsletter .form-section input:focus {
+  outline: none; 
+  border-bottom: 1px solid #FFFFFF; 
+}
+
+.newsletter .form-section label {
+  font-size: 14px;
+  color: #FFFFFF; 
+  display: block;
+}
+
+/*Index video recipes*/ 
+.video_recipes {
+  text-align: left;
+  margin-bottom: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.video_recipes p {
+  color: #E3CDB1; 
+  font-size: 16px;
+  margin-top: 2rem;
+}
+
+.video_recipes h2 {
+  font-size: 36px;
+  margin-bottom: 1rem;
+}
+
+.video_recipes h2 .light-text {
+  color: #D0D0D0; 
+}
+
+.video_recipes h2 .bold-text {
+  color: #000000; 
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  
+  padding: 0; 
+  overflow: hidden; 
+  height: 100%; 
+}
+
+.card .image {
+  width: 100%;
+  height: 0;
+  padding-top: 75%; 
+  position: relative;
+  overflow: hidden;
+}
+
+.card .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.card .content {
+  padding: 1rem; 
+  text-align: left;
+}
+
+.card .date {
+  font-size: 14px;
+  color: #9B9B9B;
+  margin-bottom: 5px;
+}
+
+.card h3 {
+  font-size: 20px;
+}
+
+.card .see {
+  font-size: 14px;
+  color: #E3CDB1;
+  text-decoration: none;
+  text-align: right;
+  display: block;
+}
+
+.see-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/*Index-bók*/
+.book {
+  background-color: var(--color-background-secondary); 
+  padding: 60px 0;
+}
+
+.book .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.book .text-section {
+  max-width: 600px;
+}
+
+.book .text-section p {
+  color: #5E5B69;
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+.book .text-section h3 {
+  font-size: 60px;
+  font-family: var(--font-family-heading); 
+  margin-bottom: 20px;
+  color: #000000; 
+}
+
+.book .text-section h4 {
+  color: #E3CDB1;
+  font-family: var(--font-family-base);
+  font-weight: normal;
+}
+
+.book .button {
+  display: inline-block;
+  padding: 15px 30px;
+  text-align: center;
+  border: var(--border-width) solid #e3cdb1;
+  background-color: transparent;
+  color: #e3cdb1;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.book .button:hover {
+  background-color: #e3cdb1;
+  color: #FFFFFF;
+}
+
+.book .image-section img {
+  width: 400px;
+  height: auto;
+}
+
+/* Index-Latest-Recipes*/ 
+.recipes {
+  text-align: left;
+  margin-bottom: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recipes p {
+  color: #E3CDB1;
+  font-size: 16px;
+  margin-top: 2rem;
+}
+
+.recipes h2 {
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.recipes h2 .light-text {
+  color: #D0D0D0;
+}
+
+.recipes h2 .bold-text {
+  color: #000000;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 100%;
+}
+
+.card .image {
+  width: 100%;
+  height: 0;
+  padding-top: 75%; 
+  position: relative;
+  overflow: hidden;
+}
+
+.card .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .content {
+  padding: 1rem;
+  text-align: left;
+}
+
+.card .content p {
+  font-size: 14px;
+  color: #9B9B9B;
+  margin-bottom: 5px;
+}
+
+.card h3 {
+  font-size: 22px;
+}
+
+.card a {
+  font-size: 16px;
+  color: #E3CDB1;
+  text-decoration: none;
+  text-align: right;
+  display: block;
+  margin-top: auto;
+}
+
+.card a:hover {
+  color: #c5a98f; 
 }
