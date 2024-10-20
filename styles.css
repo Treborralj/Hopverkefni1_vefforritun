@@ -3,26 +3,37 @@
 :root {
   /*litir*/
   --color-white: #fafafa;
+  --color-gold: #e3cdb1;
+  --color-grey:#9B9B9B;
+  --color-dark-grey: #5E5B69;
 
   /*litir breytur*/
   --color-background-primary: var(--color-white);
-  --font-family-base: 'Poppins-regular', Arial, Helvetica, sans-serif;
-  --font-family-heading: 'PlayfairDisplay-bold', 'Comic Sans MS', cursive;
-  --font-family-heading-normal: 'PlayfairDisplay-regular', 'Comic Sans MS', cursive;
+  --color-golden-text: (var(--color-gold));
+  --color-grey-text: var(--color-grey);
+  --color-grey-long-text: var(--color-dark-grey);
+
+  /*texta breytur*/
+  --font-family-base: "Poppins-regular", Arial, Helvetica, sans-serif;
+  --font-family-heading: "PlayfairDisplay-bold", "Comic Sans MS", cursive;
+  --font-family-heading-normal: "PlayfairDisplay-regular", "Comic Sans MS",
+    cursive;
 }
 
 html {
   background-color: var(--color-background-primary);
 }
+
+/** Fonts **/
 @font-face {
-  font-family: 'PlayfairDisplay-regular';
+  font-family: "PlayfairDisplay-regular";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url("./fonts/PlayfairDisplay-regular.ttf") format("woff2");
 }
 @font-face {
-  font-family: 'PlayfairDisplay-bold';
+  font-family: "PlayfairDisplay-bold";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -30,7 +41,7 @@ html {
 }
 
 @font-face {
-  font-family: 'Poppins-regular';
+  font-family: "Poppins-regular";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
@@ -51,4 +62,27 @@ h2,
 h3,
 legend {
   font-family: var(--font-family-heading);
+}
+
+
+.gold, a{
+  color: var(--color-gold);
+  text-decoration: none;
+}
+.grey{
+  color: var(--color-grey);
+}
+
+.cards {
+  display: grid;
+  grid-template-rows: auto;
+  gap: var(--vertical-space);
+  justify-items: center;
+
+  width: 100%;
+}
+.content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+    
 }
