@@ -97,6 +97,8 @@ legend {
   color: #E3CDB1; 
   font-size: 1rem;
   text-decoration: none;
+  margin-bottom: 1rem;
+  max-width: 300px;
 }
 
 .button:hover {
@@ -542,4 +544,43 @@ footer p {
 
 .card a:hover {
   color: #c5a98f; 
+}
+
+/* Latest recipe header */
+.title {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;          
+  width: 100%;                    
+}
+
+.text-section h1 {
+  font-size: 52px;
+}
+
+.text-section p {
+  color: #E3CDB1;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;          
+}
+
+.checkbox_show_video {
+  display: flex;
+  align-items: center;
+  margin-left: auto;              
+  gap: 8px;                        
+}
+
+.checkbox_show_video label {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-family-heading);
+}
+
+.checkbox_show_video input {
+  margin-right: 8px;
 }
