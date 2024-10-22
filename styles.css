@@ -9,10 +9,12 @@
 
   /* letur stærðir*/ 
   --font-size-base: 18px;
-  --font-size-headings: 60px;
+  --font-size-secondary: 14px;
+  --font-size-base-headings: 60px;
+  --font-size-secondary-headings: 40px;
 
-  /* Grunn bilið okkar er 1rem == 16px */
-  --spacing: 1rem;
+  /* Grunn bilið okkar*/
+  --spacing: 2rem;
 
   /* Border breiddir */
   --border-width: 1px;
@@ -24,6 +26,7 @@
   --color-white: #fafafa;
   --color-cream: #F7F1EB;
   --color-black: #000000;
+  --color-gold: #E3CDB1;
 
   /*litir-texti*/
   --color-main: #000000;
@@ -36,6 +39,8 @@
   --color-background-primary: var(--color-white);
   --color-background-secondary: var(--color-cream);
   --color-background-third: var(--color-black);
+
+  /*letur gerðir*/ 
   --font-family-base: 'Poppins-regular', Arial, Helvetica, sans-serif;
   --font-family-heading: 'PlayfairDisplay-bold', 'Comic Sans MS', cursive;
   --font-family-heading-normal: 'PlayfairDisplay-regular', 'Comic Sans MS', cursive;
@@ -94,7 +99,7 @@ legend {
   text-align: center;
   border: var(--border-width) solid #E3CDB1; 
   background-color: transparent; 
-  color: #E3CDB1; 
+  color: var(--color-third); 
   font-size: 1rem;
   text-decoration: none;
   margin-bottom: 1rem;
@@ -112,14 +117,19 @@ legend {
   display: flex;
   justify-content: space-between; 
   align-items: center; 
-  max-width: 1200px;
+  width: 100%;
   margin: auto;
   padding: 20px 2rem; 
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin-bottom: var(--spacing);
 }
 
 .wrapper-nav p {
   margin: 0; 
-  font-size: 20px; 
+  font-size: var(--font-size-base); 
   font-weight: bold; 
 }
 
@@ -136,7 +146,7 @@ legend {
 
 .wrapper-nav ul li a {
   text-decoration: none; 
-  color: #000000; 
+  color: var(--color-main); 
 }
 
 .wrapper-nav ul li a:hover {
@@ -164,6 +174,7 @@ footer .content {
 footer section h3 {
   margin-bottom: 20px;
   font-family: var(--font-family-base);
+  font-weight: normal;
 }
 
 footer .image {
@@ -179,7 +190,7 @@ footer .image img {
 
 footer p {
   margin-top: 10px;
-  font-size: 12px;
+  font-size: var(--font-size-secondary);
   color: #D0D0D0;
 }
 
@@ -189,13 +200,14 @@ footer p {
 .wrapper-main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 20px;
+  margin-top: var(--spacing);
+  margin-bottom: var(--spacing);
 }
 
 .wrapper-main .content {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; 
+  align-items: center; 
 }
 
 .wrapper-main .intro {
@@ -203,12 +215,12 @@ footer p {
 }
 
 .wrapper-main .intro p {
-  font-size: 18px;
+  font-size: var(--font-size-base);
   color: #5E5B69;
 }
 
 .wrapper-main .intro h1 {
-  font-size: 60px;
+  font-size: var(--font-size-base-headings);
   margin-bottom: 20px;
 }
 
@@ -225,7 +237,7 @@ footer p {
   background-color: transparent;
   color: #E3CDB1;
   text-decoration: none;
-  font-size: 16px;
+  font-size: var(--font-size-base);
   margin-top: 20px;
 }
 
@@ -235,8 +247,12 @@ footer p {
 }
 
 /*Þarf að laga myndina somehow fyrir pumpkin pie hér*/ 
-
-
+.wrapper-main .image img {
+  width: 600px;
+  object-fit: cover; 
+  object-position: top;
+  max-height: 550px; 
+}
 
 /*Index - newsletter*/
 .newsletter {
@@ -250,7 +266,7 @@ footer p {
   justify-content: flex-start;
   align-items: center;
   max-width: 1200px;
-  margin-top: 2rem;
+  margin-top: var(--spacing);
   margin: 0 auto;
 }
 
@@ -259,13 +275,13 @@ footer p {
 }
 
 .newsletter .text-section p {
-  font-size: 16px;
+  font-size: var(--font-size-base);
   margin: 0;
   color: #E3CDB1;
 }
 
 .newsletter .text-section h3 {
-  font-size: 40px;
+  font-size: var(--font-size-secondary-headings);
   margin-top: 10px;
   color: #FFFFFF;
 }
@@ -276,14 +292,14 @@ footer p {
   padding: 5px 0; 
   background-color: transparent; 
   width: 250px; 
-  font-size: 24px; 
+  font-size: var(--font-size-base); 
   color: #FFFFFF; 
   margin-right: 2rem;
 }
 
 .newsletter .form-section input::placeholder {
   color: #FFFFFF; 
-  font-size: 18px; 
+  font-size: var(--font-size-base); 
 }
 
 .newsletter .form-section input:focus {
@@ -292,7 +308,7 @@ footer p {
 }
 
 .newsletter .form-section label {
-  font-size: 14px;
+  font-size: var(--font-size-secondary);
   color: #FFFFFF; 
   display: block;
 }
@@ -307,13 +323,13 @@ footer p {
 
 .video_recipes p {
   color: #E3CDB1; 
-  font-size: 16px;
-  margin-top: 2rem;
+  font-size: var(--font-size-base);
+  margin-top: var(--spacing);
 }
 
 .video_recipes h2 {
-  font-size: 36px;
-  margin-bottom: 1rem;
+  font-size: var(--font-size-secondary-headings);
+  margin-bottom: var(--spacing);
 }
 
 .video_recipes h2 .light-text {
@@ -321,7 +337,7 @@ footer p {
 }
 
 .video_recipes h2 .bold-text {
-  color: #000000; 
+  color: var(--color-main); 
 }
 
 .cards {
@@ -374,8 +390,8 @@ footer p {
 }
 
 .card .date {
-  font-size: 14px;
-  color: #9B9B9B;
+  font-size: var(--font-size-secondary);
+  color: var(--color-second);
   margin-bottom: 5px;
 }
 
@@ -384,7 +400,7 @@ footer p {
 }
 
 .card .see {
-  font-size: 14px;
+  font-size: var(--font-size-base);
   color: #E3CDB1;
   text-decoration: none;
   text-align: right;
@@ -392,9 +408,11 @@ footer p {
 }
 
 .see-more {
+  grid-column: 2 / 3; 
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  align-items: center;
+  margin: var(--spacing);
 }
 
 /*Index-bók*/
@@ -417,15 +435,15 @@ footer p {
 
 .book .text-section p {
   color: #5E5B69;
-  font-size: 18px;
+  font-size: var(--font-size-base);
   margin-bottom: 1rem;
 }
 
 .book .text-section h3 {
-  font-size: 60px;
+  font-size: var(--font-size-base-headings);
   font-family: var(--font-family-heading); 
   margin-bottom: 20px;
-  color: #000000; 
+  color: var(--color-main); 
 }
 
 .book .text-section h4 {
@@ -441,7 +459,7 @@ footer p {
   border: var(--border-width) solid #e3cdb1;
   background-color: transparent;
   color: #e3cdb1;
-  font-size: 18px;
+  font-size: var(--font-size-base);
   text-decoration: none;
 }
 
@@ -465,12 +483,12 @@ footer p {
 
 .recipes p {
   color: #E3CDB1;
-  font-size: 16px;
-  margin-top: 2rem;
+  font-size: var(--font-size-base);
+  margin-top: var(--spacing);
 }
 
 .recipes h2 {
-  font-size: 40px;
+  font-size: var(--font-size-secondary-headings);
   margin-bottom: 1rem;
 }
 
@@ -479,7 +497,7 @@ footer p {
 }
 
 .recipes h2 .bold-text {
-  color: #000000;
+  color: var(--color-black);
 }
 
 .cards {
@@ -524,8 +542,8 @@ footer p {
 }
 
 .card .content p {
-  font-size: 14px;
-  color: #9B9B9B;
+  font-size: var(--font-size-secondary);
+  color: var(--color-second);
   margin-bottom: 5px;
 }
 
@@ -534,7 +552,7 @@ footer p {
 }
 
 .card a {
-  font-size: 16px;
+  font-size: var(--font-size-base);
   color: #E3CDB1;
   text-decoration: none;
   text-align: right;
@@ -555,7 +573,7 @@ footer p {
 }
 
 .text-section h1 {
-  font-size: 52px;
+  font-size: var(--font-size-base-headings);
 }
 
 .text-section p {
