@@ -2,12 +2,11 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 :root {
-
-  /* letur stærðir*/ 
+  /* letur stærðir*/
   --font-size-base: 18px;
   --font-size-secondary: 14px;
   --font-size-base-headings: 60px;
@@ -20,44 +19,42 @@
   --border-width: 1px;
   --border-radius-regular: 5px;
   --border-radius-image: 10px;
-  --border-regular: 1px solid #000; 
+  --border-regular: 1px solid #000;
 
   /*litir-bakgrunnur*/
   --color-white: #fafafa;
-  --color-cream: #F7F1EB;
+  --color-cream: #f7f1eb;
   --color-black: #000000;
   --color-gold: #E3CDB1;
 
   /*litir-texti*/
   --color-main: #000000;
-  --color-second: #9B9B9B;
-  --color-third: #E3CDB1;
-  --color-forth: #5E5B69; 
-
+  --color-second: #9b9b9b;
+  --color-third: #e3cdb1;
+  --color-forth: #5e5b69;
 
   /*litir breytur*/
   --color-background-primary: var(--color-white);
   --color-background-secondary: var(--color-cream);
   --color-background-third: var(--color-black);
-
-  /*letur gerðir*/ 
-  --font-family-base: 'Poppins-regular', Arial, Helvetica, sans-serif;
-  --font-family-heading: 'PlayfairDisplay-bold', 'Comic Sans MS', cursive;
-  --font-family-heading-normal: 'PlayfairDisplay-regular', 'Comic Sans MS', cursive;
+  --font-family-base: "Poppins-regular", Arial, Helvetica, sans-serif;
+  --font-family-heading: "PlayfairDisplay-bold", "Comic Sans MS", cursive;
+  --font-family-heading-normal: "PlayfairDisplay-regular", "Comic Sans MS",
+    cursive;
 }
 
 html {
   background-color: var(--color-background-primary);
 }
 @font-face {
-  font-family: 'PlayfairDisplay-regular';
+  font-family: "PlayfairDisplay-regular";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url("./fonts/PlayfairDisplay-regular.ttf") format("woff2");
 }
 @font-face {
-  font-family: 'PlayfairDisplay-bold';
+  font-family: "PlayfairDisplay-bold";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -65,7 +62,7 @@ html {
 }
 
 @font-face {
-  font-family: 'Poppins-regular';
+  font-family: "Poppins-regular";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
@@ -88,10 +85,9 @@ legend {
   font-family: var(--font-family-heading);
 }
 
-
 /*Almennt*/
 
-/*Takka útlit*/ 
+/*Takka útlit*/
 .button {
   display: inline-block;
   min-width: 250px;
@@ -107,24 +103,19 @@ legend {
 }
 
 .button:hover {
-  color: var(--color-background-secondary); 
-  background-color: #E3CDB1; 
-  border-color: var(--color-background-secondary); 
+  color: var(--color-background-secondary);
+  background-color: #e3cdb1;
+  border-color: var(--color-background-secondary);
 }
 
 /** Valmynd **/
 .wrapper-nav {
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
   margin: auto;
   padding: 20px 2rem; 
-  background-color: white;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  margin-bottom: var(--spacing);
 }
 
 .wrapper-nav p {
@@ -134,10 +125,10 @@ legend {
 }
 
 .wrapper-nav ul {
-  list-style: none; 
+  list-style: none;
   padding: 0;
   display: flex;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .wrapper-nav ul li {
@@ -150,10 +141,10 @@ legend {
 }
 
 .wrapper-nav ul li a:hover {
-  color: #E3CDB1; 
+  color: #e3cdb1;
 }
 
-/*footer*/ 
+/*footer*/
 footer {
   display: flex;
   justify-content: center;
@@ -180,7 +171,7 @@ footer section h3 {
 footer .image {
   display: flex;
   justify-content: center;
-  gap: 20px; 
+  gap: 20px;
 }
 
 footer .image img {
@@ -225,7 +216,7 @@ footer p {
 }
 
 .wrapper-main .intro h4 {
-  color: #E3CDB1;
+  color: #e3cdb1;
   font-family: var(--font-family-base);
   font-weight: normal;
 }
@@ -233,30 +224,30 @@ footer p {
 .wrapper-main .intro a.button {
   display: inline-block;
   padding: 15px 30px;
-  border: 1px solid #E3CDB1;
+  border: 1px solid #e3cdb1;
   background-color: transparent;
-  color: #E3CDB1;
+  color: #e3cdb1;
   text-decoration: none;
   font-size: var(--font-size-base);
   margin-top: 20px;
 }
 
 .wrapper-main .intro a.button:hover {
-  background-color: #E3CDB1;
+  background-color: #e3cdb1;
   color: #ffffff;
 }
 
-/*Þarf að laga myndina somehow fyrir pumpkin pie hér*/ 
+/*Pumpkin pie index mynd*/ 
 .wrapper-main .image img {
-  width: 600px;
+  width: 500px;
   object-fit: cover; 
   object-position: top;
-  max-height: 550px; 
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5)); 
 }
 
 /*Index - newsletter*/
 .newsletter {
-  background-color: #000; 
+  background-color: #000;
   margin-top: var(--spacing);
   padding: 40px;
 }
@@ -277,13 +268,13 @@ footer p {
 .newsletter .text-section p {
   font-size: var(--font-size-base);
   margin: 0;
-  color: #E3CDB1;
+  color: #e3cdb1;
 }
 
 .newsletter .text-section h3 {
   font-size: var(--font-size-secondary-headings);
   margin-top: 10px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .newsletter .form-section input {
@@ -303,8 +294,8 @@ footer p {
 }
 
 .newsletter .form-section input:focus {
-  outline: none; 
-  border-bottom: 1px solid #FFFFFF; 
+  outline: none;
+  border-bottom: 1px solid #ffffff;
 }
 
 .newsletter .form-section label {
@@ -313,7 +304,7 @@ footer p {
   display: block;
 }
 
-/*Index video recipes*/ 
+/*Index video recipes*/
 .video_recipes {
   text-align: left;
   margin-bottom: 40px;
@@ -333,7 +324,7 @@ footer p {
 }
 
 .video_recipes h2 .light-text {
-  color: #D0D0D0; 
+  color: #d0d0d0;
 }
 
 .video_recipes h2 .bold-text {
@@ -342,8 +333,8 @@ footer p {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 20px; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
   padding-bottom: 40px;
@@ -361,16 +352,16 @@ footer p {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  
-  padding: 0; 
-  overflow: hidden; 
-  height: 100%; 
+
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
 }
 
 .card .image {
   width: 100%;
   height: 0;
-  padding-top: 75%; 
+  padding-top: 75%;
   position: relative;
   overflow: hidden;
 }
@@ -381,11 +372,11 @@ footer p {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 .card .content {
-  padding: 1rem; 
+  padding: 1rem;
   text-align: left;
 }
 
@@ -417,8 +408,9 @@ footer p {
 
 /*Index-bók*/
 .book {
-  background-color: var(--color-background-secondary); 
+  background-color: var(--color-background-secondary);
   padding: 60px 0;
+  margin-bottom: 150px;
 }
 
 .book .content {
@@ -426,7 +418,7 @@ footer p {
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 100px auto;
 }
 
 .book .text-section {
@@ -447,7 +439,7 @@ footer p {
 }
 
 .book .text-section h4 {
-  color: #E3CDB1;
+  color: #e3cdb1;
   font-family: var(--font-family-base);
   font-weight: normal;
 }
@@ -465,15 +457,16 @@ footer p {
 
 .book .button:hover {
   background-color: #e3cdb1;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .book .image-section img {
   width: 400px;
   height: auto;
+  box-shadow: -21px 20px 4px rgba(0, 0, 0, 0.05);
 }
 
-/* Index-Latest-Recipes*/ 
+/* Index-Latest-Recipes*/
 .recipes {
   text-align: left;
   margin-bottom: 40px;
@@ -493,7 +486,7 @@ footer p {
 }
 
 .recipes h2 .light-text {
-  color: #D0D0D0;
+  color: #d0d0d0;
 }
 
 .recipes h2 .bold-text {
@@ -502,11 +495,38 @@ footer p {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
   padding-bottom: 40px;
+}
+@media(max-width: 750px){
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    justify-content: center;
+  
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+@media(max-width: 320px){
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
 }
 
 .card {
@@ -522,7 +542,7 @@ footer p {
 .card .image {
   width: 100%;
   height: 0;
-  padding-top: 75%; 
+  padding-top: 75%;
   position: relative;
   overflow: hidden;
 }
@@ -561,15 +581,22 @@ footer p {
 }
 
 .card a:hover {
-  color: #c5a98f; 
+  color: #c5a98f;
 }
 
 /* Latest recipe header */
 .title {
   display: flex;
-  justify-content: space-between; 
-  align-items: center;          
-  width: 100%;                    
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media(max-width:575px){
+  .content > .title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 .text-section h1 {
@@ -577,19 +604,19 @@ footer p {
 }
 
 .text-section p {
-  color: #E3CDB1;
+  color: #e3cdb1;
 }
 
 .text-section {
   display: flex;
-  flex-direction: column;          
+  flex-direction: column;
 }
 
 .checkbox_show_video {
   display: flex;
   align-items: center;
-  margin-left: auto;              
-  gap: 8px;                        
+  margin-left: auto;
+  gap: 8px;
 }
 
 .checkbox_show_video label {
@@ -601,4 +628,15 @@ footer p {
 
 .checkbox_show_video input {
   margin-right: 8px;
+}
+
+.texti {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .content {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
 }
