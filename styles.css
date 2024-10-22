@@ -111,11 +111,15 @@ legend {
 /** Valmynd **/
 .wrapper-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  max-width: 1200px;
   margin: auto;
   padding: 20px 2rem; 
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin-bottom: var(--spacing);
 }
 
 .wrapper-nav p {
