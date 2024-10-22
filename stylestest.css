@@ -1,0 +1,60 @@
+.recipe-section {
+    padding: 40px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ingredients {
+    padding-left: 50px;
+    flex: 0.5;
+  }
+
+  .method {
+    flex: 1;
+    margin-right: 50px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #92908e; 
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .quantity {
+    font-weight: bold;
+    color: #c9a469; /* Yellowish color for quantities */
+    font-size: 1.5rem;
+  }
+  
+  .method p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+  
