@@ -1,0 +1,42 @@
+@import 'config';
+
+/** Valmynd **/
+.wrapper-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding: 20px 2rem; 
+    background-color: $color-sixth;
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+    margin-bottom: $spacing;
+  }
+  
+  .wrapper-nav p {
+    margin: 0; 
+    font-size: $font-size-base; 
+    font-weight: bold; 
+  }
+  
+  .wrapper-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .wrapper-nav ul li {
+    margin: 0;
+  }
+  
+  .wrapper-nav ul li a {
+    text-decoration: none; 
+    color: $color-main; 
+  }
+  
+  .wrapper-nav ul li a:hover {
+    color: $color-third;
+  }
+  

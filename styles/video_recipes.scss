@@ -1,0 +1,28 @@
+@import 'config';
+
+.video_recipes {
+    text-align: left;
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .video_recipes p {
+    color: $color-third; 
+    font-size: $font-size-base;
+    margin-top: $spacing;
+  }
+  
+  .video_recipes h2 {
+    font-size: $font-size-secondary-headings;
+    margin-bottom: $spacing;
+  }
+  
+  .video_recipes h2 .light-text {
+    color: $color-fifth;
+  }
+  
+  .video_recipes h2 .bold-text {
+    color: $color-main; 
+  }
+  

@@ -1,0 +1,57 @@
+@import 'config';
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  @media(max-width:575px){
+    .content > .title {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+  
+  .text-section h1 {
+    font-size: $font-size-base-headings;
+  }
+  
+  .text-section p {
+    color: $color-third
+  }
+  
+  .text-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .checkbox_show_video {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 8px;
+  }
+  
+  .checkbox_show_video label {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    font-family: $font-family-heading;
+  }
+  
+  .checkbox_show_video input {
+    margin-right: 8px;
+  }
+  
+  .texti {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card .content {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+  }
