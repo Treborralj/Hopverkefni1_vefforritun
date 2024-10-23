@@ -1,0 +1,61 @@
+@import 'config';
+
+.book {
+    background-color: $color-background-secondary;
+    padding: 60px 0;
+    margin-bottom: 150px;
+  }
+  
+  .book .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 100px auto;
+  }
+  
+  .book .text-section {
+    max-width: 600px;
+  }
+  
+  .book .text-section p {
+    color: $color-forth;
+    font-size: $font-size-base;
+    margin-bottom: 1rem;
+  }
+  
+  .book .text-section h3 {
+    font-size: $font-size-base-headings;
+    font-family: $font-family-heading; 
+    margin-bottom: 20px;
+    color: $color-main; 
+  }
+  
+  .book .text-section h4 {
+    color: $color-third;
+    font-family: $font-family-base;
+    font-weight: normal;
+  }
+  
+  .book .button {
+    display: inline-block;
+    padding: 15px 30px;
+    text-align: center;
+    border: $border-width solid $color-third;
+    background-color: transparent;
+    color: $color-third;
+    font-size: $font-size-base;
+    text-decoration: none;
+  }
+  
+  .book .button:hover {
+    background-color: $color-third;
+    color: $color-white;
+  }
+  
+  .book .image-section img {
+    width: 400px;
+    height: auto;
+    box-shadow: -21px 20px 4px rgba(0, 0, 0, 0.05);
+  }
+  

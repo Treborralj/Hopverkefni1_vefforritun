@@ -1,0 +1,43 @@
+@import 'config';
+
+/*footer*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    flex-direction: column;
+    margin-top: $spacing;
+    margin-bottom: $spacing;
+  }
+  
+  footer .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  footer section h3 {
+    margin-bottom: 20px;
+    font-family: $font-family-base;
+    font-weight: normal;
+  }
+  
+  footer .image {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  footer .image img {
+    width: 50px;
+    height: auto;
+  }
+  
+  footer p {
+    margin-top: 10px;
+    font-size: $font-size-secondary;
+    color: $color-second;
+  }
+  

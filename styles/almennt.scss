@@ -1,0 +1,44 @@
+@import 'config';
+
+// „reset“ sem fjarlægir margin og padding af öllu
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*** Allt meginmál notar Poppins-regular ***/
+html,
+input,
+select,
+button {
+  font-family: $font-family-base;
+}
+
+/*** Allar fyrirsagnir nota PlayfairDisplay-Bold ***/
+h1,
+h2,
+h3,
+legend {
+  font-family: $font-family-heading;
+}
+
+html {
+  background-color: $color-background-primary;
+}
+
+@font-face {
+  font-family: "Poppins-regular";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/fonts/Poppins-Regular.ttf") format("truetype"); /* Correct format */
+}
+
+@font-face {
+  font-family: "PlayfairDisplay-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/PlayfairDisplay-Bold.ttf") format("truetype"); /* Correct format */
+}

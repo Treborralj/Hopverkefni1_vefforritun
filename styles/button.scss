@@ -1,0 +1,26 @@
+@import "config";
+
+/* Takka útlit */
+.button {
+  display: inline-block;
+  min-width: 250px;
+  padding: 0.75rem;
+  text-align: center;
+  border: $border-width solid $color-third;
+  background-color: transparent;
+  color: $color-third;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  max-width: 300px;
+  transition: background-color $transition-time-short
+      $transition-timing-function,
+    color $transition-time-short $transition-timing-function,
+    border-color $transition-time-short $transition-timing-function;
+}
+
+.button:hover {
+  color: $color-background-secondary;
+  background-color: $color-third;
+  border-color: $color-background-secondary;
+}

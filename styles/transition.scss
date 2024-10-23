@@ -1,0 +1,23 @@
+@import 'config';
+
+a {
+    transition: background-color $transition-time-short $transition-timing-function,
+      color $transition-time-short $transition-timing-function,
+      border-color $transition-time-short $transition-timing-function;
+  }
+  
+  /* Fade in animation */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  header,
+  .wrapper {
+    animation: $transition-time-long $transition-timing-function fade-in;
+  }
+  

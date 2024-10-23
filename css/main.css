@@ -1,0 +1,662 @@
+@charset "UTF-8";
+/* Stillingar */
+/* letur stærðir*/
+/* Grunn bilið okkar*/
+/* Border breiddir */
+/*litir-bakgrunnur*/
+/*litir-texti*/
+/*litir breytur*/
+/*letur breytur*/
+/* Transitions */
+/* Stillingar */
+/* letur stærðir*/
+/* Grunn bilið okkar*/
+/* Border breiddir */
+/*litir-bakgrunnur*/
+/*litir-texti*/
+/*litir breytur*/
+/*letur breytur*/
+/* Transitions */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*** Allt meginmál notar Poppins-regular ***/
+html,
+input,
+select,
+button {
+  font-family: "Poppins-regular", Arial, Helvetica, sans-serif;
+}
+
+/*** Allar fyrirsagnir nota PlayfairDisplay-Bold ***/
+h1,
+h2,
+h3,
+legend {
+  font-family: "PlayfairDisplay-bold", "Comic Sans MS", cursive;
+}
+
+html {
+  background-color: #fafafa;
+}
+
+@font-face {
+  font-family: "Poppins-regular";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/fonts/Poppins-Regular.ttf") format("truetype"); /* Correct format */
+}
+@font-face {
+  font-family: "PlayfairDisplay-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/PlayfairDisplay-Bold.ttf") format("truetype"); /* Correct format */
+}
+/* Stillingar */
+/* letur stærðir*/
+/* Grunn bilið okkar*/
+/* Border breiddir */
+/*litir-bakgrunnur*/
+/*litir-texti*/
+/*litir breytur*/
+/*letur breytur*/
+/* Transitions */
+.book {
+  background-color: #f7f1eb;
+  padding: 60px 0;
+  margin-bottom: 150px;
+}
+
+.book .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+.book .text-section {
+  max-width: 600px;
+}
+
+.book .text-section p {
+  color: #5e5b69;
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+.book .text-section h3 {
+  font-size: 60px;
+  font-family: "PlayfairDisplay-bold", "Comic Sans MS", cursive;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.book .text-section h4 {
+  color: #e3cdb1;
+  font-family: "Poppins-regular", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+.book .button {
+  display: inline-block;
+  padding: 15px 30px;
+  text-align: center;
+  border: 1px solid #e3cdb1;
+  background-color: transparent;
+  color: #e3cdb1;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.book .button:hover {
+  background-color: #e3cdb1;
+  color: #fafafa;
+}
+
+.book .image-section img {
+  width: 400px;
+  height: auto;
+  box-shadow: -21px 20px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Stillingar */
+/* letur stærðir*/
+/* Grunn bilið okkar*/
+/* Border breiddir */
+/*litir-bakgrunnur*/
+/*litir-texti*/
+/*litir breytur*/
+/*letur breytur*/
+/* Transitions */
+/* Takka útlit */
+.button {
+  display: inline-block;
+  min-width: 250px;
+  padding: 0.75rem;
+  text-align: center;
+  border: 1px solid #e3cdb1;
+  background-color: transparent;
+  color: #e3cdb1;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  max-width: 300px;
+  transition: background-color 300ms ease-in-out, color 300ms ease-in-out, border-color 300ms ease-in-out;
+}
+
+.button:hover {
+  color: #f7f1eb;
+  background-color: #e3cdb1;
+  border-color: #f7f1eb;
+}
+
+/* Stillingar */
+/* letur stærðir*/
+/* Grunn bilið okkar*/
+/* Border breiddir */
+/*litir-bakgrunnur*/
+/*litir-texti*/
+/*litir breytur*/
+/*letur breytur*/
+/* Transitions */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.card {
+  background-color: #fafafa;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+.card .image {
+  width: 100%;
+  height: 0;
+  padding-top: 75%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .content {
+  padding: 1rem;
+  text-align: left;
+}
+
+.card .date {
+  font-size: 14px;
+  color: #9b9b9b;
+  margin-bottom: 5px;
+}
+
+.card h3 {
+  font-size: 20px;
+}
+
+.card .see {
+  font-size: 18px;
+  color: #e3cdb1;
+  text-decoration: none;
+  text-align: right;
+  display: block;
+}
+
+.see-more {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+@media (max-width: 900px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    justify-content: center;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 320px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+}
+/* Stillingar */
+/* letur stærðir*/
+/* Grunn bilið okkar*/
+/* Border breiddir */
+/*litir-bakgrunnur*/
+/*litir-texti*/
+/*litir breytur*/
+/*letur breytur*/
+/* Transitions */
+/*footer*/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+footer .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer section h3 {
+  margin-bottom: 20px;
+  font-family: "Poppins-regular", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+footer .image {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .image img {
+  width: 50px;
+  height: auto;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #9b9b9b;
+}
+
+/* Stillingar */
+/* letur stærðir*/
+/* Grunn bilið okkar*/
+/* Border breiddir */
+/*litir-bakgrunnur*/
+/*litir-texti*/
+/*litir breytur*/
+/*letur breytur*/
+/* Transitions */
+.recipes {
+  text-align: left;
+  margin-bottom: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recipes p {
+  color: #e3cdb1;
+  font-size: 18px;
+  margin-top: 2rem;
+}
+
+.recipes h2 {
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.recipes h2 .light-text {
+  color: #d0d0d0;
+}
+
+.recipes h2 .bold-text {
+  color: #000000;
+}
+
+/* Stillingar */
+/* letur stærðir*/
+/* Grunn bilið okkar*/
+/* Border breiddir */
+/*litir-bakgrunnur*/
+/*litir-texti*/
+/*litir breytur*/
+/*letur breytur*/
+/* Transitions */
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 575px) {
+  .content > .title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.text-section h1 {
+  font-size: 60px;
+}
+
+.text-section p {
+  color: #e3cdb1;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox_show_video {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 8px;
+}
+
+.checkbox_show_video label {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  font-family: "PlayfairDisplay-bold", "Comic Sans MS", cursive;
+}
+
+.checkbox_show_video input {
+  margin-right: 8px;
+}
+
+.texti {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .content {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+/* Stillingar */
+/* letur stærðir*/
+/* Grunn bilið okkar*/
+/* Border breiddir */
+/*litir-bakgrunnur*/
+/*litir-texti*/
+/*litir breytur*/
+/*letur breytur*/
+/* Transitions */
+/** Valmynd **/
+.wrapper-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  padding: 20px 2rem;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  margin-bottom: 2rem;
+}
+
+.wrapper-nav p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.wrapper-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.wrapper-nav ul li {
+  margin: 0;
+}
+
+.wrapper-nav ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.wrapper-nav ul li a:hover {
+  color: #e3cdb1;
+}
+
+/* Stillingar */
+/* letur stærðir*/
+/* Grunn bilið okkar*/
+/* Border breiddir */
+/*litir-bakgrunnur*/
+/*litir-texti*/
+/*litir breytur*/
+/*letur breytur*/
+/* Transitions */
+.newsletter {
+  background-color: #000000;
+  margin-top: 2rem;
+  padding: 40px;
+}
+
+.newsletter .content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 1200px;
+  margin-top: 2rem;
+  margin: 0 auto;
+}
+
+.newsletter .text-section {
+  flex: 1;
+}
+
+.newsletter .text-section p {
+  font-size: 18px;
+  margin: 0;
+  color: #e3cdb1;
+}
+
+.newsletter .text-section h3 {
+  font-size: 40px;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.newsletter .form-section input {
+  border: none;
+  border-bottom: 1px solid #e3cdb1;
+  padding: 5px 0;
+  background-color: transparent;
+  width: 250px;
+  font-size: 18px;
+  color: #ffffff;
+  margin-right: 2rem;
+}
+
+.newsletter .form-section input::placeholder {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.newsletter .form-section input:focus {
+  outline: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+.newsletter .form-section label {
+  font-size: 14px;
+  color: #ffffff;
+  display: block;
+}
+
+/* Stillingar */
+/* letur stærðir*/
+/* Grunn bilið okkar*/
+/* Border breiddir */
+/*litir-bakgrunnur*/
+/*litir-texti*/
+/*litir breytur*/
+/*letur breytur*/
+/* Transitions */
+a {
+  transition: background-color 300ms ease-in-out, color 300ms ease-in-out, border-color 300ms ease-in-out;
+}
+
+/* Fade in animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+header,
+.wrapper {
+  animation: 600ms ease-in-out fade-in;
+}
+
+/* Stillingar */
+/* letur stærðir*/
+/* Grunn bilið okkar*/
+/* Border breiddir */
+/*litir-bakgrunnur*/
+/*litir-texti*/
+/*litir breytur*/
+/*letur breytur*/
+/* Transitions */
+.video_recipes {
+  text-align: left;
+  margin-bottom: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.video_recipes p {
+  color: #e3cdb1;
+  font-size: 18px;
+  margin-top: 2rem;
+}
+
+.video_recipes h2 {
+  font-size: 40px;
+  margin-bottom: 2rem;
+}
+
+.video_recipes h2 .light-text {
+  color: #d0d0d0;
+}
+
+.video_recipes h2 .bold-text {
+  color: #000000;
+}
+
+/* Stillingar */
+/* letur stærðir*/
+/* Grunn bilið okkar*/
+/* Border breiddir */
+/*litir-bakgrunnur*/
+/*litir-texti*/
+/*litir breytur*/
+/*letur breytur*/
+/* Transitions */
+.wrapper-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.wrapper-main .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper-main .intro {
+  max-width: 600px;
+}
+
+.wrapper-main .intro p {
+  font-size: 18px;
+  color: #5e5b69;
+}
+
+.wrapper-main .intro h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.wrapper-main .intro h4 {
+  color: #e3cdb1;
+  font-family: "Poppins-regular", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+.wrapper-main .intro a.button {
+  display: inline-block;
+  padding: 15px 30px;
+  border: 1px solid #e3cdb1;
+  background-color: transparent;
+  color: #e3cdb1;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.wrapper-main .intro a.button:hover {
+  background-color: #e3cdb1;
+  color: #ffffff;
+}
+
+/*Pumpkin pie index mynd*/
+.wrapper-main .image img {
+  width: 500px;
+  object-fit: cover;
+  object-position: top;
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5));
+}
+
+/*# sourceMappingURL=main.css.map */

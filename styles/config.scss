@@ -1,0 +1,46 @@
+/* Stillingar */
+
+    /* letur stærðir*/
+    $font-size-base: 18px;
+    $font-size-secondary: 14px;
+    $font-size-base-headings: 60px;
+    $font-size-secondary-headings: 40px;
+  
+    /* Grunn bilið okkar*/
+    $spacing: 2rem;
+  
+    /* Border breiddir */
+    $border-width: 1px;
+    $border-radius-regular: 5px;
+    $border-radius-image: 10px;
+    $border-regular: 1px solid #000;
+  
+    /*litir-bakgrunnur*/
+    $color-white: #fafafa;
+    $color-cream: #f7f1eb;
+    $color-black: #000000;
+    $color-gold: #E3CDB1;
+  
+    /*litir-texti*/
+    $color-main: #000000;
+    $color-second: #9b9b9b;
+    $color-third: #e3cdb1;
+    $color-forth: #5e5b69;
+    $color-fifth: #d0d0d0;
+    $color-sixth: #ffffff;
+  
+    /*litir breytur*/
+    $color-background-primary: #fafafa;
+    $color-background-secondary: #f7f1eb;
+    $color-background-third: #000000;
+
+    /*letur breytur*/
+    $font-family-base: "Poppins-regular", Arial, Helvetica, sans-serif;
+    $font-family-heading: "PlayfairDisplay-bold", "Comic Sans MS", cursive;
+    $font-family-heading-normal: "PlayfairDisplay-regular", "Comic Sans MS",
+      cursive;
+  
+      /* Transitions */
+    $transition-time-short: 300ms;
+    $transition-time-long: 600ms;
+    $transition-timing-function: ease-in-out;
