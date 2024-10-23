@@ -659,6 +659,7 @@ footer p {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  margin-bottom: 100px;
 }
 
 .recipe .ingredients {
@@ -712,6 +713,7 @@ footer p {
 .intro img {
   margin-right: 5px;
 }
+/* video recipe section fyrir neðan */
 .video.recipe-section {
   padding: 40px;
   font-family: 'Arial', sans-serif;
@@ -781,6 +783,7 @@ footer p {
     display: flex;
     width: 100%; 
     height: 400px; 
+    margin-bottom: 60px;
 }
 
 .overlay {
@@ -806,7 +809,7 @@ footer p {
 
 .overlay img {
   max-width: 100%;
-  height: auto; /* Maintain aspect ratio */
+  height: auto; 
 }
 
 .right-half {
@@ -817,4 +820,16 @@ footer p {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.play-button img {
+  cursor: pointer;
 }
