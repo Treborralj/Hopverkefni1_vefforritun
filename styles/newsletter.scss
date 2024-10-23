@@ -1,0 +1,60 @@
+@import 'config';
+
+.newsletter {
+    background-color: $color-black;
+    margin-top: $spacing;
+    padding: 40px;
+  }
+  
+  .newsletter .content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 1200px;
+    margin-top: $spacing;
+    margin: 0 auto;
+  }
+  
+  .newsletter .text-section {
+    flex: 1;
+  }
+  
+  .newsletter .text-section p {
+    font-size: $font-size-base;
+    margin: 0;
+    color: $color-third;
+  }
+  
+  .newsletter .text-section h3 {
+    font-size: $font-size-secondary-headings;
+    margin-top: 10px;
+    color: $color-sixth;
+  }
+  
+  .newsletter .form-section input {
+    border: none;
+    border-bottom: 1px solid $color-third; 
+    padding: 5px 0; 
+    background-color: transparent; 
+    width: 250px; 
+    font-size: $font-size-base; 
+    color: $color-sixth; 
+    margin-right: 2rem;
+  }
+  
+  .newsletter .form-section input::placeholder {
+    color: $color-sixth; 
+    font-size: $font-size-base; 
+  }
+  
+  .newsletter .form-section input:focus {
+    outline: none;
+    border-bottom: 1px solid $color-sixth;
+  }
+  
+  .newsletter .form-section label {
+    font-size: $font-size-secondary;
+    color: $color-sixth; 
+    display: block;
+  }
+  

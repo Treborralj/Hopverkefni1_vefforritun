@@ -1,0 +1,59 @@
+@import 'config';
+
+.wrapper-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: $spacing;
+    margin-bottom: $spacing;
+  }
+  
+  .wrapper-main .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+  }
+  
+  .wrapper-main .intro {
+    max-width: 600px;
+  }
+  
+  .wrapper-main .intro p {
+    font-size: $font-size-base;
+    color: $color-forth;
+  }
+  
+  .wrapper-main .intro h1 {
+    font-size: $font-size-base-headings;
+    margin-bottom: 20px;
+  }
+  
+  .wrapper-main .intro h4 {
+    color: $color-third;
+    font-family: $font-family-base;
+    font-weight: normal;
+  }
+  
+  .wrapper-main .intro a.button {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 1px solid $color-third;
+    background-color: transparent;
+    color: $color-third;
+    text-decoration: none;
+    font-size: $font-size-base;
+    margin-top: 20px;
+  }
+  
+  .wrapper-main .intro a.button:hover {
+    background-color: $color-third;
+    color: $color-sixth;
+  }
+
+/*Pumpkin pie index mynd*/ 
+.wrapper-main .image img {
+    width: 500px;
+    object-fit: cover; 
+    object-position: top;
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5)); 
+  }
+  

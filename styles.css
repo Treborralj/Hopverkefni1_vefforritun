@@ -1,642 +1,213 @@
-/* Stillingar */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  /* letur stærðir*/
-  --font-size-base: 18px;
-  --font-size-secondary: 14px;
-  --font-size-base-headings: 60px;
-  --font-size-secondary-headings: 40px;
-
-  /* Grunn bilið okkar*/
-  --spacing: 2rem;
-
-  /* Border breiddir */
-  --border-width: 1px;
-  --border-radius-regular: 5px;
-  --border-radius-image: 10px;
-  --border-regular: 1px solid #000;
-
-  /*litir-bakgrunnur*/
-  --color-white: #fafafa;
-  --color-cream: #f7f1eb;
-  --color-black: #000000;
-  --color-gold: #E3CDB1;
-
-  /*litir-texti*/
-  --color-main: #000000;
-  --color-second: #9b9b9b;
-  --color-third: #e3cdb1;
-  --color-forth: #5e5b69;
-
-  /*litir breytur*/
-  --color-background-primary: var(--color-white);
-  --color-background-secondary: var(--color-cream);
-  --color-background-third: var(--color-black);
-  --font-family-base: "Poppins-regular", Arial, Helvetica, sans-serif;
-  --font-family-heading: "PlayfairDisplay-bold", "Comic Sans MS", cursive;
-  --font-family-heading-normal: "PlayfairDisplay-regular", "Comic Sans MS",
-    cursive;
-}
-
-html {
-  background-color: var(--color-background-primary);
-}
-@font-face {
-  font-family: "PlayfairDisplay-regular";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("./fonts/PlayfairDisplay-regular.ttf") format("woff2");
-}
-@font-face {
-  font-family: "PlayfairDisplay-bold";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("./fonts/PlayfairDisplay-Bold.ttf") format("woff2");
-}
-
-@font-face {
-  font-family: "Poppins-regular";
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url("./fonts/Poppins-Regular.ttf") format("woff2");
-}
-
-/*** Allt meginmál notar Poppins-regular ***/
-html,
-input,
-select,
-button {
-  font-family: var(--font-family-base);
-}
-
-/*** Allar fyrirsagnir nota PlayfairDisplay-Bold ***/
-h1,
-h2,
-h3,
-legend {
-  font-family: var(--font-family-heading);
-}
-
-/*Almennt*/
-
-/*Takka útlit*/
-.button {
-  display: inline-block;
-  min-width: 250px;
-  padding: 0.75rem;
-  text-align: center;
-  border: var(--border-width) solid #E3CDB1; 
-  background-color: transparent; 
-  color: var(--color-third); 
-  font-size: 1rem;
-  text-decoration: none;
-  margin-bottom: 1rem;
-  max-width: 300px;
-}
-
-.button:hover {
-  color: var(--color-background-secondary);
-  background-color: #e3cdb1;
-  border-color: var(--color-background-secondary);
-}
-
-/** Valmynd **/
-.wrapper-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: auto;
-  padding: 20px 2rem; 
-  background-color: white;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  margin-bottom: var(--spacing);
-}
-
-.wrapper-nav p {
-  margin: 0; 
-  font-size: var(--font-size-base); 
-  font-weight: bold; 
-}
-
-.wrapper-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-}
-
-.wrapper-nav ul li {
-  margin: 0;
-}
-
-.wrapper-nav ul li a {
-  text-decoration: none; 
-  color: var(--color-main); 
-}
-
-.wrapper-nav ul li a:hover {
-  color: #e3cdb1;
-}
-
-/*footer*/
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-  flex-direction: column;
-  margin-top: var(--spacing);
-  margin-bottom: var(--spacing);
-}
-
-footer .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-footer section h3 {
-  margin-bottom: 20px;
-  font-family: var(--font-family-base);
-  font-weight: normal;
-}
-
-footer .image {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-footer .image img {
-  width: 50px;
-  height: auto;
-}
-
-footer p {
-  margin-top: 10px;
-  font-size: var(--font-size-secondary);
-  color: #D0D0D0;
-}
-
-/*Index.html*/
-
-/*Pumpkin-pie-byrjun á Index*/
-.wrapper-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-top: var(--spacing);
-  margin-bottom: var(--spacing);
-}
-
-.wrapper-main .content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; 
-}
-
-.wrapper-main .intro {
-  max-width: 552px;
-}
-
-.wrapper-main .intro p {
-  font-size: var(--font-size-base);
-  color: #5E5B69;
-}
-
-.wrapper-main .intro h1 {
-  font-size: var(--font-size-base-headings);
-  margin-bottom: 20px;
-}
-
-.wrapper-main .intro h4 {
-  color: #e3cdb1;
-  font-family: var(--font-family-base);
-  font-weight: normal;
-}
-
-.wrapper-main .intro a.button {
-  display: inline-block;
-  padding: 15px 30px;
-  border: 1px solid #e3cdb1;
-  background-color: transparent;
-  color: #e3cdb1;
-  text-decoration: none;
-  font-size: var(--font-size-base);
-  margin-top: 20px;
-}
-
-.wrapper-main .intro a.button:hover {
-  background-color: #e3cdb1;
-  color: #ffffff;
-}
-
-/*Pumpkin pie index mynd*/ 
-.wrapper-main .image img {
-  width: 500px;
-  object-fit: cover; 
-  object-position: top;
-  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5)); 
-}
-
-/*Index - newsletter*/
-.newsletter {
-  background-color: #000;
-  margin-top: var(--spacing);
-  padding: 40px;
-}
-
-.newsletter .content {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  max-width: 1200px;
-  margin-top: var(--spacing);
-  margin: 0 auto;
-}
-
-.newsletter .text-section {
-  flex: 1;
-}
-
-.newsletter .text-section p {
-  font-size: var(--font-size-base);
-  margin: 0;
-  color: #e3cdb1;
-}
-
-.newsletter .text-section h3 {
-  font-size: var(--font-size-secondary-headings);
-  margin-top: 10px;
-  color: #ffffff;
-}
-
-.newsletter .form-section input {
-  border: none;
-  border-bottom: 1px solid #E3CDB1; 
-  padding: 5px 0; 
-  background-color: transparent; 
-  width: 250px; 
-  font-size: var(--font-size-base); 
-  color: #FFFFFF; 
-  margin-right: 2rem;
-}
-
-.newsletter .form-section input::placeholder {
-  color: #FFFFFF; 
-  font-size: var(--font-size-base); 
-}
-
-.newsletter .form-section input:focus {
-  outline: none;
-  border-bottom: 1px solid #ffffff;
-}
-
-.newsletter .form-section label {
-  font-size: var(--font-size-secondary);
-  color: #FFFFFF; 
-  display: block;
-}
-
-/*Index video recipes*/
-.video_recipes {
-  text-align: left;
-  margin-bottom: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.video_recipes p {
-  color: #E3CDB1; 
-  font-size: var(--font-size-base);
-  margin-top: var(--spacing);
-}
-
-.video_recipes h2 {
-  font-size: var(--font-size-secondary-headings);
-  margin-bottom: var(--spacing);
-}
-
-.video_recipes h2 .light-text {
-  color: #d0d0d0;
-}
-
-.video_recipes h2 .bold-text {
-  color: var(--color-main); 
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-bottom: 40px;
-}
-
-.card {
-  background-color: #fff;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-
-  padding: 0;
-  overflow: hidden;
-  height: 100%;
-}
-
-.card .image {
-  width: 100%;
-  height: 0;
-  padding-top: 75%;
-  position: relative;
-  overflow: hidden;
-}
-
-.card .image img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.card .content {
-  padding: 1rem;
-  text-align: left;
-}
-
-.card .date {
-  font-size: var(--font-size-secondary);
-  color: var(--color-second);
-  margin-bottom: 5px;
-}
-
-.card h3 {
-  font-size: 20px;
-}
-
-.card .see {
-  font-size: var(--font-size-base);
-  color: #E3CDB1;
-  text-decoration: none;
-  text-align: right;
-  display: block;
-}
-
-.see-more {
-  grid-column: 2 / 3; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: var(--spacing);
-}
-
-/*Index-bók*/
-.book {
-  background-color: var(--color-background-secondary);
-  padding: 60px 0;
-  margin-bottom: 150px;
-}
-
-.book .content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 100px auto;
-}
-
-.book .text-section {
-  max-width: 600px;
-}
-
-.book .text-section p {
-  color: #5E5B69;
-  font-size: var(--font-size-base);
-  margin-bottom: 1rem;
-}
-
-.book .text-section h3 {
-  font-size: var(--font-size-base-headings);
-  font-family: var(--font-family-heading); 
-  margin-bottom: 20px;
-  color: var(--color-main); 
-}
-
-.book .text-section h4 {
-  color: #e3cdb1;
-  font-family: var(--font-family-base);
-  font-weight: normal;
-}
-
-.book .button {
-  display: inline-block;
-  padding: 15px 30px;
-  text-align: center;
-  border: var(--border-width) solid #e3cdb1;
-  background-color: transparent;
-  color: #e3cdb1;
-  font-size: var(--font-size-base);
-  text-decoration: none;
-}
-
-.book .button:hover {
-  background-color: #e3cdb1;
-  color: #ffffff;
-}
-
-.book .image-section img {
-  width: 400px;
-  height: auto;
-  box-shadow: -21px 20px 4px rgba(0, 0, 0, 0.05);
-}
-
-/* Index-Latest-Recipes*/
-.recipes {
-  text-align: left;
-  margin-bottom: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.recipes p {
-  color: #E3CDB1;
-  font-size: var(--font-size-base);
-  margin-top: var(--spacing);
-}
-
-.recipes h2 {
-  font-size: var(--font-size-secondary-headings);
-  margin-bottom: 1rem;
-}
-
-.recipes h2 .light-text {
-  color: #d0d0d0;
-}
-
-.recipes h2 .bold-text {
-  color: var(--color-black);
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-bottom: 40px;
-}
-@media(max-width: 750px){
+@media (max-width: 575px) {
   .cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-bottom: 40px;
-    justify-content: center;
-  
+    grid-template-columns: 1fr;
   }
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-}
-@media(max-width: 320px){
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-bottom: 40px;
-  }
-}
 
-.card {
-  background-color: #fff;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
-  height: 100%;
-}
-
-.card .image {
-  width: 100%;
-  height: 0;
-  padding-top: 75%;
-  position: relative;
-  overflow: hidden;
-}
-
-.card .image img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.card .content {
-  padding: 1rem;
-  text-align: left;
-}
-
-.card .content p {
-  font-size: var(--font-size-secondary);
-  color: var(--color-second);
-  margin-bottom: 5px;
-}
-
-.card h3 {
-  font-size: 22px;
-}
-
-.card a {
-  font-size: var(--font-size-base);
-  color: #E3CDB1;
-  text-decoration: none;
-  text-align: right;
-  display: block;
-  margin-top: auto;
-}
-
-.card a:hover {
-  color: #c5a98f;
-}
-
-/* Latest recipe header */
-.title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-@media(max-width:575px){
-  .content > .title {
+  .card .content {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    text-align: center; 
+  }
+  
+  .card h3, .card .date {
+    text-align: center; 
+  }
+  
+  .card .see {
+    text-align: center; 
+  }
+  .card .image {
+    margin: 0 auto;
+  }
+
+  .button {
+    margin: 0 auto;
   }
 }
 
-.text-section h1 {
-  font-size: var(--font-size-base-headings);
+/*book*/
+@media (max-width: 575px) {
+  .wrapper-main .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .wrapper-main .intro {
+    margin-bottom: 20px;
+  }
+
+  .wrapper-main .image img {
+    width: 100%;
+  }
+
+  .book .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .book .text-section {
+    margin-bottom: 20px;
+  }
+
+  .book .image-section img {
+    width: 100%;
+  }
+
+  .button {
+    margin: 0 auto;
+  }
 }
 
-.text-section p {
-  color: #e3cdb1;
+/*newsletter*/
+@media (max-width: 575px) {
+  .newsletter .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .newsletter .form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .newsletter .form-section input {
+    text-align: center; 
+    margin-bottom: 20px;
+  }
+
+  /* Video recipes*/
+  .video_recipes {
+    text-align: center;
+  }
+
+  .video_recipes h2 {
+    text-align: center;
+  }
 }
 
-.text-section {
-  display: flex;
-  flex-direction: column;
+.recipes {
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.checkbox_show_video {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  gap: 8px;
+/*scale 320px*/ 
+
+@media (max-width: 320px) {
+  .cards {
+    grid-template-columns: 1fr; 
+  }
+
+  .card .content {
+    display: flex;
+    flex-direction: column; 
+    text-align: center; 
+  }
+  
+  .card h3 {
+    text-align: left; 
+    font-size: 16px; 
+    margin-bottom: 5px; 
+  }
+
+  .card .date {
+    text-align: center;
+    font-size: 14px; 
+    margin-bottom: 5px;
+  }
+  
+  .card .see {
+    text-align: right; 
+    font-size: 14px; 
+    margin-top: 5px; 
+  }
+
+  .card .image {
+    margin: 0 auto; 
+  }
+
+  .button {
+    margin: 0 auto; 
+    padding: 10px; 
+    font-size: 14px; 
+  }
 }
 
-.checkbox_show_video label {
-  font-size: 22px;
-  display: flex;
-  align-items: center;
-  font-family: var(--font-family-heading);
+/*book*/
+@media (max-width: 320px) {
+  .wrapper-main .content {
+    flex-direction: column;
+    text-align: center; 
+  }
+
+  .wrapper-main .intro {
+    margin-bottom: 20px; 
+  }
+
+  .wrapper-main .image img {
+    width: 100%; 
+    max-width: 100%; 
+  }
+
+  .book .content {
+    flex-direction: column; 
+    text-align: center; 
+  }
+
+  .book .text-section {
+    margin-bottom: 20px; 
+  }
+
+  .book .image-section img {
+    width: 100%;
+    max-width: 100%; 
+  }
+
+  .button {
+    margin: 0 auto;
+    padding: 10px; 
+    font-size: 14px; 
+  }
 }
 
-.checkbox_show_video input {
-  margin-right: 8px;
+/*newsletter*/
+@media (max-width: 320px) {
+  .newsletter .content {
+    flex-direction: column; 
+    text-align: center; 
+  }
+
+  .newsletter .form-section {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 20px; 
+  }
+
+  .newsletter .form-section input {
+    text-align: center; 
+    margin-bottom: 20px; 
+    font-size: 14px; 
+  }
+
+  /* Video recipes*/
+  .video_recipes {
+    text-align: center; 
+  }
+
+  .video_recipes h2 {
+    text-align: center; 
+  }
 }
 
-.texti {
-  display: flex;
-  justify-content: space-between;
+.recipes {
+  text-align: center;
+  margin-bottom: 40px; 
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 
 .card .content {

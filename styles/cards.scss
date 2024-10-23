@@ -1,0 +1,107 @@
+@import 'config';
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+  
+  .card {
+    background-color: $color-white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-white;
+  
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  .card .image {
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card .content {
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .card .date {
+    font-size: $font-size-secondary;
+    color: $color-second;
+    margin-bottom: 5px;
+  }
+  
+  .card h3 {
+    font-size: 20px;
+  }
+  
+  .card .see {
+    font-size: $font-size-base;
+    color: $color-third;
+    text-decoration: none;
+    text-align: right;
+    display: block;
+  }
+  
+  .see-more {
+    grid-column: 2 / 3; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: $spacing;
+  }
+
+
+  @media(max-width: 900px){
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-bottom: 40px;
+      justify-content: center;
+    
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  }
+  @media(max-width: 320px){
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-bottom: 40px;
+    }
+  }
+  
+  
