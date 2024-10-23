@@ -4,18 +4,21 @@
     text-align: left;
     margin-bottom: 40px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin-left: 0;
+    margin-right: auto;
   }
   
   .recipes p {
     color: $color-third;
     font-size: $font-size-base;
     margin-top: $spacing;
+    text-align: left;
   }
   
   .recipes h2 {
     font-size: $font-size-secondary-headings;
     margin-bottom: 1rem;
+    text-align: left;
   }
   
   .recipes h2 .light-text {
