@@ -206,7 +206,7 @@ footer p {
 }
 
 .wrapper-main .intro {
-  max-width: 600px;
+  max-width: 552px;
 }
 
 .wrapper-main .intro p {
@@ -643,4 +643,178 @@ footer p {
   display: flex;
   flex-direction: column;
   white-space: nowrap;
+}
+
+/* recipe section fyrir neðan */
+
+.recipe-section {
+  padding: 40px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.recipe .container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.recipe .ingredients {
+  flex: 0.5;
+}
+
+.recipe .method {
+  flex: 1;
+  margin-right: 50px;
+}
+
+.recipe h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #92908e; 
+}
+
+.recipe h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.recipe ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recipe li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.recipe .quantity {
+  font-weight: bold;
+  color: #c9a469;
+  font-size: 1.5rem;
+}
+
+.recipe .method p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.intro span {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.intro img {
+  margin-right: 5px;
+}
+.video.recipe-section {
+  padding: 40px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.video_recipes .container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: black;
+}
+
+.video_recipes .ingredients {
+  flex: 0.5;
+}
+
+.video_recipes .method {
+  flex: 1;
+  margin-right: 50px;
+}
+
+.video_recipes h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #92908e; 
+}
+
+.video_recipes h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.video_recipes ul {
+  list-style: none;
+  padding: 0;
+}
+
+.video_recipes li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.video_recipes .quantity {
+  font-weight: bold;
+  color: #c9a469;
+  font-size: 1.5rem;
+}
+
+.video_recipes .method p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.video_recipes .content {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.recipe-banner {
+    position: relative;
+    display: flex;
+    width: 100%; 
+    height: 400px; 
+}
+
+.overlay {
+  width: 30%; 
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background-color: black; 
+}
+
+.overlay h1, .overlay p {
+  margin: 0;
+  padding: 10px 0;
+  color: #fff;
+}
+
+.overlay p {
+  font-size: 18px;
+}
+
+.overlay img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.right-half {
+  width: 70%;
+  height: 100%;
+  background-image: linear-gradient(to right, black, transparent), url('./myndir/Video.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
