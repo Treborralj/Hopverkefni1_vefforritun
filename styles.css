@@ -369,27 +369,6 @@
   flex: 0.5;
 }
 
-.video_recipes .method {
-  flex: 1;
-  margin-right: 50px;
-}
-
-.video_recipes h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #92908e; 
-}
-
-.video_recipes h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-.video_recipes ul {
-  list-style: none;
-  padding: 0;
-}
-
 .video_recipes li {
   font-size: 1rem;
   margin-bottom: 10px;
@@ -468,4 +447,46 @@
 
 .play-button img {
   cursor: pointer;
+}
+
+/*recipes síða, show video recipes p*/ 
+@media (max-width: 575px) {
+  .checkbox_show_video {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .checkbox_show_video {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+/*video recipe síða*/
+@media (max-width: 930px) {
+  .intro-video p {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro-video h1 {
+    display: none; 
+  }
+}
+
+@media (max-width: 750px) {
+  .method {
+    margin-left: 2rem; 
+  }
+}
+
+@media (max-width: 380px) {
+  .method {
+    margin-left: 2rem; 
+  }
 }
