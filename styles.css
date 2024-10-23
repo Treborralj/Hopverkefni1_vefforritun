@@ -27,6 +27,17 @@
   }
 }
 
+/*latest recipes*/
+@media (max-width: 575px) {
+  .recipes {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .recipes p, .recipes h2 {
+    text-align: center;
+  }
+}
+
 /*book*/
 @media (max-width: 575px) {
   .wrapper-main .content {
@@ -138,6 +149,17 @@
   }
 }
 
+/*latest recipes*/
+@media (max-width: 320px) {
+  .recipes {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .recipes p, .recipes h2 {
+    text-align: center;
+  }
+}
+
 /*book*/
 @media (max-width: 320px) {
   .wrapper-main .content {
@@ -203,11 +225,54 @@
   .video_recipes h2 {
     text-align: center; 
   }
+
+  .recipes {
+    text-align: center;
+    margin-bottom: 40px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+  }
 }
 
-.recipes {
-  text-align: center;
-  margin-bottom: 40px; 
-  max-width: 1200px; 
-  margin: 0 auto; 
+/*nav listi*/
+@media (max-width: 768px) {
+  .wrapper-nav {
+    padding: 15px 1.5rem; 
+  }
+
+  .wrapper-nav ul {
+    gap: 15px; 
+  }
+
+  .wrapper-nav ul li a {
+    font-size: 0.9rem; 
+  }
+}
+
+@media (max-width: 575px) {
+  .wrapper-nav {
+    padding: 10px 1rem; 
+  }
+
+  .wrapper-nav ul {
+    gap: 10px; 
+  }
+
+  .wrapper-nav ul li a {
+    font-size: 0.8rem; 
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapper-nav {
+    padding: 8px 0.5rem; 
+  }
+
+  .wrapper-nav ul {
+    gap: 5px; 
+  }
+
+  .wrapper-nav ul li a {
+    font-size: 0.7rem; 
+  }
 }
